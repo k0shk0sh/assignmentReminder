@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style type='text/css'>
+      a            { color:#50729F }
+      div.title    { 
+          color:#50729F; 
+          font-size:1.2em; 
+          font-weight:bold; 
+          margin-top:1em; 
+          margin-bottom:0.5em; 
+          text-align:center }
+      div.subtitle { 
+          color:#50729F; 
+          font-size:0.8em; 
+          margin-bottom:1em; 
+          text-align:center }
+      div.freetext { color:#6CA6CD }
+      div.list     { color:#6CA6CD }
+    </style>
+  </head>
+  <body>
+$ 1.0
+  % Welcome To Assignment Reminder
+  % Version 1.0
+  % 07-01-2013
+    * The First Release Of Assignment Reminder.
+    * Easily Create and Share Your Reminders.
+    * Multiple Themes To Choose From.
+    * Fast Typing and Nice UI to Meet your desires.
+    * Any Suggestions  Please Do Contact Me Through The Contact Me By Click On Option Button.
+    * If you Liked The App Consider a Small Donation To Help Us Keep Updating The App.
+    *Enjoy It.
+    % Sincerely The Developer.
+$ END_OF_CHANGE_LOG
+  </body>
+</html>

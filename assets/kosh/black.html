@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Reminder HTML5</title>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/jquery.mobile-1.1.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/jquery.mobile.simpledialog.min.css" >
+    <link rel="stylesheet" type="text/css" href="style/jquery.mobile.datebox.min.css" />
+ 	<link rel="stylesheet" href="style.css" type="text/css">
+	<style>
+	ul > li.empty {
+	line-height: 44px;
+	text-align: center;
+	cursor: default;
+	border-bottom: none;
+	padding-left: 0;
+	font-weight: bold;
+	-webkit-animation-name: bounce;
+	-webkit-animation-duration: 0.9s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-direction: alternate;
+	-moz-animation-name: bounce;
+	-moz-animation-duration: 0.9s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-direction: alternate;
+	animation-name: bounce;
+	animation-duration: 0.9s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	-webkit-font-smoothing:antialiased;
+}
+@-webkit-keyframes bounce {
+	from {
+		-webkit-transform: translateY(0px);
+	}
+	to {
+		-webkit-transform: translateY(20px);
+	}
+}
+
+@-moz-keyframes bounce {
+	from {
+		-moz-transform: translateY(0px);
+	}
+	to {
+		-moz-transform: translateY(20px);
+	}
+}
+
+@keyframes bounce {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(20px);
+	}
+}
+
+@-webkit-keyframes highlight {
+	0% {
+		color: #236ED8;
+	}
+	80% {
+		color: #236ED8;
+	}
+	100% {
+		color: #000000;
+	}
+}
+
+@-moz-keyframes highlight {
+	0% {
+		color: #236ED8;
+	}
+	80% {
+		color: #236ED8;
+	}
+	100% {
+		color: #000000;
+	}
+}
+
+@keyframes highlight {
+	0% {
+		color: #236ED8;
+	}
+	80% {
+		color: #236ED8;
+	}
+	100% {
+		color: #000000;
+	}
+}
+
+	</style>
+ 	<style type="text/css">
+ 	.kosh{
+ 	height:95%;
+ 	overflow:hidden;
+ 	}
+ 	</style>
+ 	<style type="text/css">
+ 	.ui-content{
+ 	overflow:hidden;
+}
+ 	</style>
+  </head>
+  <body>
+  
+<div data-role="page" data-theme="a"  id="page-home-black" data-fullscreen="true">
+		<div data-role="header" data-theme="a">
+		<h5>Assignment Reminder</h5>
+		<a href="#" id="create_new_btn"  data-role="button"    data-icon="add">Create New </a>
+		<a href="#" id="options"  data-role="button"  data-icon="grid">Options</a>	
+		
+		</div><!-- /header -->
+		<div data-role="content" id="event-content">
+				<div  id="display_events">
+					<ul  id="eventList" data-role="listview"  data-inset="true"><li>Reminder</ul>
+				</div>
+		</div>	
+	</div>
+<div data-role="page" class="kosh" data-theme="a" id="page-new-event">
+		<div data-role="header" >
+		<h1>Assignment Creator</h1>
+		<a href="black.html" rel="external" data-role="button" data-icon="back" >Back</a>
+    	<a href="black.html"  rel="external" id="save_btn" data-role="button" data-icon="check" >Save</a>
+		</div><!-- /header -->		
+		<div data-role="content" class="kosh"  id="event-content">
+		<center>
+			<div id="mydate_div">
+			<label for="mydate2">Select Date and Time</label>
+			<input name="mydate2"  id="mydate2" type="text" data-role="datebox"
+   			data-options='{"mode": "slidebox", "disableManualInput": true, "dateFormat":"%Y-%m-%dT%I:%M%p", "timeFormatOverride":12, "fieldsOrderOverride":["y","m","d","h","i"]}'>
+			</div> <br>
+			<div id="title_div">
+  			<label for="title">Title</label>	
+  			<input id="title" name="title"  type="text"/>
+  			</div> <br>
+    		<div id="desc_div">
+    		<label for="desc">Description:</label>
+    		<textarea cols="40"  rows="15" id="desc" placeholder="write something in here" name="desc"></textarea>
+    		</div>
+			<center>
+		</div><!-- /content -->
+</div><!-- /page-new_event -->
+
+ <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile.simpledialog2.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile.datebox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile.datebox.i8n.en.js"></script>
+	<script type="text/javascript" src="js/black.js"></script>
+  </body>
+</html>    

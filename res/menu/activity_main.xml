@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="Exit" android:icon="@drawable/exit"/>
+    <item android:id="@+id/item1" android:title="About" android:icon="@drawable/info">
+    </item>
+    <item android:id="@+id/themes" android:title="Themes" android:icon="@drawable/themes" android:menuCategory="system">
+        <menu>
+            <item android:id="@+id/black" android:title="Darkness"/>
+            <item android:id="@+id/blue" android:title="BlueGrey"/>
+            <item android:id="@+id/white" android:title="Lightness"/>
+            <item android:id="@+id/yellow" android:title="Golden"/>
+            <item android:id="@+id/stock" android:title="Default"/>
+        </menu>
+    </item>
+</menu>

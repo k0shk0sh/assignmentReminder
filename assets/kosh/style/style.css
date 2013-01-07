@@ -1,0 +1,19 @@
+#create_new_btn{
+}
+#text-top{
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+	padding:10px 0px 20px 0px;
+}
+
+#save_btn{
+}
+
+.event_time{
+	font-size:small;
+    font-weight:bold;
+}
+p{
+	padding:10px;
+}
